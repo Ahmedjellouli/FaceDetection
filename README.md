@@ -3,7 +3,7 @@
 
 ### Prerequisites
 
-after all make sure that you have already install the folowing librarys:
+after all make sure that you have already install the folowing libraries:
 
 - opencv
 ```
