@@ -45,7 +45,8 @@ ImagePath ="D:\xx\xx\FaceDetection\Faces\\" #Image folder path
 
 interesting instance :
 ```
-Video = detectInVideo(detectors = detectors(frame=None , detectFFace=False , detectEyes=False ,detectLandmarks=True),
+Video = detectInVideo(detectors = detectors(frame=None , detectFFace=False , detectEyes=False ,
+                                             detectLandmarks=True),
                       Path = VideoPath ,
                       Video = "... .mp4"  # put your Video name Video.mp4)
 
