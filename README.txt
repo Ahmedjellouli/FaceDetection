@@ -1,4 +1,12 @@
-# FaceDetection
+# Detect Faces in video or image easily 
+
+after all import those librarys:
+        # time
+        # cv2
+        # dlib
+        # moviepy
+        # screeninfo
+
 1 - put in path video/image the directory where your Video/image exist
 2 - choose what you want to detect in your video/image in detectors class
         # detectFFace = True or false
