@@ -73,7 +73,7 @@ Image = Image(detectors = detectors(frame=None ,  detectFFace=True , detectEyes=
 ``` 
 # Author
 
-* ** Ahmed Jellouli** - *ENGINEERING STUDENT* 
+* **Ahmed Jellouli** - *ENGINEERING STUDENT* 
 
 # License
 
