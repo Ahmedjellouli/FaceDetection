@@ -1,5 +1,5 @@
 # Detect Faces in video or image easily 
-![](https://github.com/Ahmedjellouli/FaceDetection/raw/main/Faces%20in%20this%20image.png)
+![](Faces/Dev Patel.jpg)
 
 after all import those librarys:
         # time
