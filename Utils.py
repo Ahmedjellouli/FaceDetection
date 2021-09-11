@@ -1,10 +1,6 @@
 import time
-
 import cv2
 import dlib
-import numpy as np
-from ffpyplayer.player import MediaPlayer
-import os
 from moviepy.editor import *
 import screeninfo
 
@@ -26,7 +22,7 @@ class Image:
             cv2.imshow('Faces in this image', self.Image)
 
             if self.Save:
-                cv2.imwrite('Faces in this image.jpg', self.Image)
+                cv2.imwrite('Faces in this image.png', self.Image)
             cv2.waitKey(0)
         def __resize(self  ):
             screen = screeninfo.get_monitors()[0]
@@ -46,14 +42,7 @@ class Image:
             print(self.Image.shape)
 
 
-
-
-
-
-
-
-
-
+        
 
 
 class detectInVideo:
@@ -141,10 +130,7 @@ class detectors:
 
          if self.detectFFace:
              face_cascade = cv2.CascadeClassifier('cascades/haarcascade_frontalface_default.xml')
-             gray = cv2.cvtColor(self.frame, cv2.COLOR_BGR2GRAY)
-             faces = face_cascade.detectMultiScale(gray, 1.3, 5)
-             for (x, y, w, h) in faces:
-                 self.frame = cv2.rectangle(self.frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+             self.drawRectagle(face_cascade)
          return self.frame
 
 
@@ -177,14 +163,14 @@ class detectors:
                      y = landmarks.part(Point).y
 
                      # cv2.rectangle(img ,(x1,y1), (x2,y2) , color= (255,255,255) ,thickness=1 )
-                     cv2.circle( self.frame, (x, y), 0, (255, 255, 0), 2)
+                     cv2.circle( self.frame, (x, y), 0, (150, 150, 28), 3)
          return self.frame
 
      def drawRectagle(self,face_cascade ):
          gray = cv2.cvtColor(self.frame, cv2.COLOR_BGR2GRAY)
          faces = face_cascade.detectMultiScale(gray, 1.3, 5)
          for (x, y, w, h) in faces:
-             self.frame = cv2.rectangle(self.frame, (x, y), (x + w, y + h), (255, 255, 0), 1)
+             self.frame = cv2.rectangle(self.frame, (x, y), (x + w, y + h), (150, 150, 28), 1)
 
 
 
