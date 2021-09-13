@@ -1,6 +1,6 @@
 # Detect Faces in video or image easily 
 
-in this code we will take any video or image and try detect all faces  on them using **OpenCV** and **dlib** libraries;
+in this code we will take any video or image and try to detect all faces on them using **OpenCV** and **dlib** libraries;
 
 ![](Faces%20in%20this%20image.png)
 
